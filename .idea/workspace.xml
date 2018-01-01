@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c558f35d-23c8-47aa-bcf3-692a57df0bd5" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\ra-mi\Documents\Training\Front End\frontend-nanodegree-resume-master\exportToHTML" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\/\/ \$\(\&quot;\#mapDiv\&quot;\)\.append\(googleMap\)\;\n\nvar bio \= \{\n    name\: \&quot;Rami AlZahrani\&quot;\,\n    role\: \&quot;Front End Developer\&quot;\,\n    contacts\: \{\n        mobile\: \&quot;0596720052\&quot;\,\n        email\: \&quot;ra\-mi\@hotmail\.com\&quot;\,\n        github\: \&quot;ramimalzahrani\&quot;\,\n        twitter\: \&quot;kokoshnel\&quot;\,\n        location\: \&quot;Jeddah\&quot;\,\n    \}\,\n    welcomeMsg\: \&quot;Welcome To My Resume\&quot;\,\n    skills\: \[\&quot;JavaScript\&quot;\, \&quot;HTML\&quot;\, \&quot;CSS\&quot;\, \&quot;jQuery\&quot;\]\,\n    bioPic\: \&quot;images\/me\.jpg\&quot;\,\n    display\: function\(\) \{\n        var name \= HTMLheaderName\.replace\(\&quot;\%data\%\&quot;\, bio\.name\)\;\n        var role \= HTMLheaderRole\.replace\(\&quot;\%data\%\&quot;\, bio\.role\)\;\n        var mobile \= HTMLmobile\.replace\(\&quot;\%data\%\&quot;\, bio\.contacts\.mobile\)\;\n        var email \= HTMLemail\.replace\(\&quot;\%data\%\&quot;\, bio\.contacts\.email\)\;\n        var github \= HTMLgithub\.replace\(\&quot;\%data\%\&quot;\, bio\.contacts\.github\)\;\n        var twitter \= HTMLtwitter\.replace\(\&quot;\%data\%\&quot;\, bio\.contacts\.twitter\)\;\n        var location \= HTMLlocation\.replace\(\&quot;\%data\%\&quot;\, bio\.location\)\;\n        var welcomeMsg \= HTMLwelcomeMsg\.replace\(\&quot;\%data\%\&quot;\, bio\.welcomeMsg\)\;\n        var bioPic \= HTMLbioPic\.replace\(\&quot;\%data\%\&quot;\, bio\.bioPic\)\;\n        \$\(\&quot;\#header\&quot;\)\.prepend\(name\, role\)\;\n        \$\(\&quot;\#topContacts\&quot;\)\.append\(mobile\,email\,twitter\,github\,location\)\;\n        \$\(\&quot;\#header\&quot;\)\.append\(welcomeMsg\,\)\;\n        \$\(\&quot;\#header\&quot;\)\.append\(bioPic\)\;\n        \$\(\&quot;\#header\&quot;\)\.append\(HTMLskillsStart\)\;\n        for \(var r \= 0\; r \&lt; bio\.skills\.length\; r\+\+\) \{\n            var skills \= HTMLskills\.replace\(\&quot;\%data\%\&quot;\, bio\.skills\[r\]\)\;\n            \$\(\&quot;\#skills\:last\&quot;\)\.append\(skills\)\;\n        \}\;\n    \}\n\}\;\nvar education \= \{\n    schools\: \[\{\n            name\: \&quot;Alahanf Bin Qiys\&quot;\,\n            location\: \&quot;Jeddah\&quot;\,\n            degree\: \&quot;High School\&quot;\,\n            majors\: \&quot;Natural Science\&quot;\,\n            dates\: \&quot;2003\-2004\&quot;\,\n        \}\,\n        \{\n            name\: \&quot;Saudi Electornic University\&quot;\,\n            location\: \&quot;Jeddah\&quot;\,\n            degree\: \&quot;Bachelor\&quot;\,\n            majors\: \&quot;Information Technology\&quot;\,\n            dates\: \&quot;20014\-2017\&quot;\,\n        \}\n    \]\,\n    onlineCourses\: \[\{\n            title\: \&quot;HTML onlineCourses\&quot;\,\n            school\: \&quot;Udacity\&quot;\,\n            dates\: \&quot;Dec\-Feb\&quot;\,\n            url\: \&quot;https\:\/\/www\.udacity\.com\&quot;\n        \}\,\n        \{\n            title\: \&quot;CSS onlineCourses\&quot;\,\n            school\: \&quot;Udacity\&quot;\,\n            dates\: \&quot;Dec\-Feb\&quot;\,\n            url\: \&quot;https\:\/\/www\.udacity\.com\&quot;\n        \}\,\n        \{\n            title\: \&quot;JavaScript onlineCourses\&quot;\,\n            school\: \&quot;Udacity\&quot;\,\n            dates\: \&quot;Dec\-Feb\&quot;\,\n            url\: \&quot;https\:\/\/www\.udacity\.com\&quot;\n        \}\n    \]\,\n    display\: function\(\) \{\n        \$\(\&quot;\#education\&quot;\)\.append\(HTMLschoolStart\)\;\n        for \(var r \= 0\; r \&lt; education\.schools\.length\; r\+\+\) \{\n            var name \= HTMLschoolName\.replace\(\&quot;\%data\%\&quot;\, education\.schools\[r\]\.name\)\;\n            var degree \= HTMLschoolDegree\.replace\(\&quot;\%data\%\&quot;\, education\.schools\[r\]\.degree\)\;\n            var dates \= HTMLschoolDates\.replace\(\&quot;\%data\%\&quot;\, education\.schools\[r\]\.dates\)\;\n            var location \= HTMLschoolLocation\.replace\(\&quot;\%data\%\&quot;\, education\.schools\[r\]\.location\)\;\n            var majors \= HTMLschoolMajor\.replace\(\&quot;\%data\%\&quot;\, education\.schools\[r\]\.majors\)\;\n            \$\(\&quot;\.education\-entry\:last\&quot;\)\.append\(name\+degree\,dates\,location\,majors\)\;\n        \}\;\n        \$\(\&quot;\#education\&quot;\)\.append\(HTMLonlineClasses\)\;\n        for \(var r \= 0\; r \&lt; education\.onlineCourses\.length\; r\+\+\) \{\n        \	\$\(\&quot;\#education\&quot;\)\.append\(HTMLschoolStart\)\;\n            var title \= HTMLonlineTitle\.replace\(\&quot;\%data\%\&quot;\, education\.onlineCourses\[r\]\.title\)\;\n            var school \= HTMLonlineSchool\.replace\(\&quot;\%data\%\&quot;\, education\.onlineCourses\[r\]\.school\)\;\n            var dates \= HTMLonlineDates\.replace\(\&quot;\%data\%\&quot;\, education\.onlineCourses\[r\]\.dates\)\;\n            var url \= HTMLonlineURL\.replace\(\&quot;\%data\%\&quot;\, education\.onlineCourses\[r\]\.url\)\;\n            \$\(\&quot;\.education\-entry\:last\&quot;\)\.append\(title\+school\,dates\,url\)\;\n        \}\;\n\n    \}\n\}\;\nvar work \= \{\n    jobs\: \[\{\n        employer\: \&quot;PetroRabigh Company\&quot;\,\n        title\: \&quot;Plant Operator\&quot;\,\n        location\: \&quot;Rabigh\&quot;\,\n        dates\: \&quot;2005 \- 2009\&quot;\,\n        description\: \&quot;Working in PetroRabigh Company as Operator in PP Plant\&quot;\,\n    \}\,\{\n        employer\: \&quot;PetroRabigh Company\&quot;\,\n        title\: \&quot;Console Operator\&quot;\,\n        location\: \&quot;Rabigh\&quot;\,\n        dates\: \&quot;2009 \- in progress\&quot;\,\n        description\: \&quot;Working in PetroRabigh Company as Console Operator in PP Plant for controling quality and run the plant\&quot;\,\n    \}\]\,\n    display\: function \(\) \{\n        \$\(\&quot;\#workExperience\&quot;\)\.append\(HTMLworkStart\)\;\n        for\(var r\=0\;r\&lt;work\.jobs\.length\;r\+\+\)\{\n            var employer \= HTMLworkEmployer\.replace\(\&quot;\%data\%\&quot;\,work\.jobs\[r\]\.employer\)\;\n            var title \= HTMLworkTitle\.replace\(\&quot;\%data\%\&quot;\,work\.jobs\[r\]\.title\)\;\n            var location \= HTMLworkLocation\.replace\(\&quot;\%data\%\&quot;\,work\.jobs\[r\]\.location\)\;\n            var dates \= HTMLworkDates\.replace\(\&quot;\%data\%\&quot;\,work\.jobs\[r\]\.dates\)\;\n            var description \= HTMLworkDescription\.replace\(\&quot;\%data\%\&quot;\,work\.jobs\[r\]\.description\)\;\n            \$\(\&quot;\.work\-entry\:last\&quot;\)\.append\(employer\+title\,dates\,location\,description\)\;\n        \}\n\n    \}\n\}\;\n\nvar project  \=\{\n    projects\:\[\{\n        title\:\&quot;Animal Trading Cards\&quot;\,\n        dates\:\&quot;7 Dec \- 14 Dec\&quot;\,\n        description\:\&quot;Use what I\'ve learned about CSS to convert a design prototype into a functional webpage\!\&quot;\,\n        images\:\[\&quot;images\/AnimalTradingCards\.jpg\&quot;\]\n    \}\,\{\n        title\:\&quot;Build a Portfolio Site\&quot;\,\n        dates\:\&quot;21 Dec \- 27 Dec\&quot;\,\n        description\:\&quot;develop a responsive website that will display images\, descriptions and links to each of the portfolio projects\&quot;\,\n        images\:\[\&quot;PortfolioSite\.png\&quot;\]\n    \}\]\,\n    display\:function \(\)\{\n        for\(var r \= 0\; r\&lt;project\.projects\.length\; r\+\+\)\{\n            \n\n        \}    \}\n\n\}\n\nbio\.display\(\)\;\neducation\.display\(\)\;\nwork\.display\(\)\;</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/helper.js" />
+        <option value="$PROJECT_DIR$/js/resumeBuilder.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/frontend-nanodegree-resume-master/index.html" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c558f35d-23c8-47aa-bcf3-692a57df0bd5" name="Default" comment="" />
+      <created>1514808858241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514808858241</updated>
+      <workItem from="1514808859788" duration="8940000" />
+      <workItem from="1514817952685" duration="1243000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10183000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3162">
+          <caret line="186" column="38" lean-forward="true" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/ra-mi/Documents/Training/Front End/frontend-nanodegree-resume-master/index.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/index.html</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/js/helper.js</node>
+            <node x="" y="">$PROJECT_DIR$/index.html</node>
+            <node x="" y="">$PROJECT_DIR$/js/jQuery.js</node>
+            <node x="" y="">$PROJECT_DIR$/js/resumeBuilder.js</node>
+            <node x="" y="">$PROJECT_DIR$/css/style.css</node>
+            <node x="" y="">http://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyB2WlRZqbXoBVJaGIO5KeJQJ3gpK-b30uk</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="284.5" y="140.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
