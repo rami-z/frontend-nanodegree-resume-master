@@ -119,7 +119,7 @@ var work = {
     }
 };
 
-var project = {
+var projects = {
     projects: [{
             title: "Animal Trading Cards",
             dates: "7 Dec - 14 Dec",
@@ -137,7 +137,7 @@ var project = {
         $("#projects").append(HTMLprojectStart);
         for (var r = 0; r < project.projects.length; r++) {
             var title = HTMLprojectTitle.replace("%data%", project.projects[r].title);
-            var dates = HTMLprojectDates.replace("%data%", project.projects[r].dates);
+            dates = HTMLprojectDates.replace("%data%", project.projects[r].dates);
             var description = HTMLprojectDescription.replace("%data%", project.projects[r].description);
             var images = HTMLprojectImage.replace("%data%", project.projects[r].images);
             $(".project-entry").append(title, dates, description, images);
