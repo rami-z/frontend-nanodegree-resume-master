@@ -137,7 +137,7 @@ var projects = {
         $("#projects").append(HTMLprojectStart);
         for (var r = 0; r < projects.projects.length; r++) {
             var title = HTMLprojectTitle.replace("%data%", projects.projects[r].title);
-            dates = HTMLprojectDates.replace("%data%", projects.projects[r].dates);
+            var dates = HTMLprojectDates.replace("%data%", projects.projects[r].dates);
             var description = HTMLprojectDescription.replace("%data%", projects.projects[r].description);
             var images = HTMLprojectImage.replace("%data%", projects.projects[r].images);
             $(".project-entry").append(title, dates, description, images);
