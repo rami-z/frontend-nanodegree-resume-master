@@ -1,5 +1,4 @@
 $("#mapDiv").append(googleMap);
-
 var bio = {
     name: "Rami AlZahrani",
     role: "Front End Developer",
@@ -10,9 +9,9 @@ var bio = {
         twitter: "kokoshnel",
         location: "Jeddah"
     },
-    welcomeMsg: "Welcome To My Resume",
+    welcomeMessage: "Welcome To My Resume",
     skills: ["JavaScript", "HTML", "CSS", "jQuery"],
-    bioPic: "images/me.jpg",
+    biopic: "images/me.jpg",
     display: function() {
         var name = HTMLheaderName.replace("%data%", bio.name);
         var role = HTMLheaderRole.replace("%data%", bio.role);
@@ -20,13 +19,12 @@ var bio = {
         var email = HTMLemail.replace("%data%", bio.contacts.email);
         var github = HTMLgithub.replace("%data%", bio.contacts.github);
         var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-        var location = HTMLlocation.replace("%data%", bio.location);
-        var welcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-        var bioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+        var location = HTMLlocation.replace("%data%", bio.contacts.location);
+        var welcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+        var biopic = HTMLbioPic.replace("%data%", bio.biopic);
         $("#header").prepend(name, role);
-        $("#topContacts").append(mobile, email, twitter, github, location);
-        $("#footerContacts").append(mobile, email, twitter, github, location);
-        $("#header").append(welcomeMsg, bioPic);
+        $("#topContacts,#footerContacts").append(mobile, email, twitter, github, location);
+        $("#header").append(welcomeMessage, biopic);
         $("#header").append(HTMLskillsStart);
         for (var r = 0; r < bio.skills.length; r++) {
             var skills = HTMLskills.replace("%data%", bio.skills[r]);
@@ -40,32 +38,32 @@ var education = {
             location: "Jeddah",
             degree: "High School",
             majors: ["Natural Science"],
-            schoolDates: "2003-2004"
+            dates: "2003-2004"
         },
         {
             name: "Saudi Electornic University",
             location: "Jeddah",
             degree: "Bachelor",
             majors: ["Information Technology"],
-            schoolDates: "20014-2017"
+            dates: "20014-2017"
         }
     ],
     onlineCourses: [{
         title: "HTML onlineCourses",
             school: "Udacity",
-            onlineClassesDates: "Dec-Feb",
+            dates: "Dec-Feb",
             url: "https://www.udacity.com"
         },
         {
             title: "CSS onlineCourses",
             school: "Udacity",
-            onlineClassesDates: "Dec-Feb",
+            dates: "Dec-Feb",
             url: "https://www.udacity.com"
         },
         {
             title: "JavaScript onlineCourses",
             school: "Udacity",
-            onlineClassesDates: "Dec-Feb",
+            dates: "Dec-Feb",
             url: "https://www.udacity.com"
         }
     ],
@@ -74,19 +72,19 @@ var education = {
         for (var r = 0; r < education.schools.length; r++) {
             var name = HTMLschoolName.replace("%data%", education.schools[r].name);
             var degree = HTMLschoolDegree.replace("%data%", education.schools[r].degree);
-            var schoolDates = HTMLschoolDates.replace("%data%", education.schools[r].schoolDates);
+            var dates = HTMLschoolDates.replace("%data%", education.schools[r].dates);
             var location = HTMLschoolLocation.replace("%data%", education.schools[r].location);
             var majors = HTMLschoolMajor.replace("%data%", education.schools[r].majors);
-            $(".education-entry:last").append(name + degree, schoolDates, location, majors);
+            $(".education-entry:last").append(name + degree, dates, location, majors);
         }
         $("#education").append(HTMLonlineClasses);
         for (var t = 0; t < education.onlineCourses.length; t++) {
             $("#education").append(HTMLschoolStart);
             var title = HTMLonlineTitle.replace("%data%", education.onlineCourses[t].title);
             var school = HTMLonlineSchool.replace("%data%", education.onlineCourses[t].school);
-            var onlineClassesDates = HTMLonlineDates.replace("%data%", education.onlineCourses[t].onlineClassesDates);
+            var dates = HTMLonlineDates.replace("%data%", education.onlineCourses[t].dates);
             var url = HTMLonlineURL.replace("%data%", education.onlineCourses[t].url);
-            $(".education-entry:last").append(title + school, onlineClassesDates, url);
+            $(".education-entry:last").append(title + school, dates, url);
         }
 
     }
