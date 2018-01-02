@@ -135,11 +135,11 @@ var projects = {
     ],
     display: function() {
         $("#projects").append(HTMLprojectStart);
-        for (var r = 0; r < project.projects.length; r++) {
-            var title = HTMLprojectTitle.replace("%data%", project.projects[r].title);
-            dates = HTMLprojectDates.replace("%data%", project.projects[r].dates);
-            var description = HTMLprojectDescription.replace("%data%", project.projects[r].description);
-            var images = HTMLprojectImage.replace("%data%", project.projects[r].images);
+        for (var r = 0; r < projects.projects.length; r++) {
+            var title = HTMLprojectTitle.replace("%data%", projects.projects[r].title);
+            dates = HTMLprojectDates.replace("%data%", projects.projects[r].dates);
+            var description = HTMLprojectDescription.replace("%data%", projects.projects[r].description);
+            var images = HTMLprojectImage.replace("%data%", projects.projects[r].images);
             $(".project-entry").append(title, dates, description, images);
         }
     }
@@ -147,4 +147,4 @@ var projects = {
 bio.display();
 education.display();
 work.display();
-project.display();
+projects.display();
